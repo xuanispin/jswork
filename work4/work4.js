@@ -7,26 +7,21 @@ if (isNaN(level)){
 for(let i=1;i<=level;++i){
     let blank = level - i;
     for(let k=0;k<blank;++k){
-        document.write('&nbsp');
+        document.write('&nbsp;');
     }
-    //打印星星
     let star = i * 2 - 1
     for(let j=0;j<star;++j){
         document.write('*')
     }
-    //换行
     document.write("<br>")
 }
-
 let str = '<table border="1">'
 for(let i=1;i<10;++i){
-    str +='<tr>'
-    for(var j=1;j<=1;++j){
-        //; 并接单元格
-        str += 'td' + j + '*' + i + '=' + ( j * i ) + '</td>'
+    str += '<tr>'
+    for(var j=1;j<=i;++j){
+        str += '<td>' + j + '*' + i + '=' + ( j * i ) + '</td>'
     }
     str += '</tr>'
 }
 str += '</table>'
-//设置div的html文档内容
 document.getElementById('table').innerHTML = str
