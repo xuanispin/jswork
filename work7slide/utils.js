@@ -31,7 +31,7 @@ function bubbleSort(str){
 function showLog(logValues, showElement) {
     let str = ''
     //解构赋值的方式，从排序日志遍历器去取出一条结果，赋值给row和pos变量
-    let {
+    let{
         done,
         value: [row, pos]
     } = logValues.next()
