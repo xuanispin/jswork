@@ -21,3 +21,13 @@ function monkey(){
     }
     document.getElementById('monkeyking').innerText = monkey[0]
 }
+
+function stat(){
+    let str =  document.getElementById("str").value
+    let obj = str.split('').sort().reduce((x, y) =>
+        (x[y]++ || (x[y] = 1), x), {
+    })
+    
+
+    document.getElementById('result').innerText = JSON.stringify(obj)
+}
