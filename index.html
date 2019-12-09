@@ -1,50 +1,94 @@
 <!doctype html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>黄毅旋的作业</title>
+        <style type="text/css">
+        #nav{
+            list-style:none;
+            margin:0;
+            padding:0;
+            background-color:cornflowerblue;
+            height:40px;
+            line-height:40px
+        }
+        #nav li{
+            float:left;
+        }
+        #nav li a{
+            display:block;
+            padding:0px 40px;
+            text-decoration:none;
+            color:white;
+        }
+
+        #nav2{
+            list-style:none;
+            margin:0;
+            padding:0;
+            background-color:cornflowerblue;
+            height:40px;
+            line-height:40px
+        }
+        #nav2 li{
+            float:none;
+            background-color:cornflowerblue;
+        }
+        #nav2 li a{
+            display:block;
+            padding:0px 40px;
+            text-decoration:none;
+            color:white;
+        }
+
+        #nav ul{
+            display:none;
+        }
+        #nav li:hover ul{
+            display:block;
+        }
+        #nav ul{
+            position:absolute;
+        }
+        a:link{
+            color:white;
+        }
+        a:visited{
+            color:white;
+        }
+        a:hover{
+            background-color:lightskyblue;
+        }
+
+        </style>
     </head>
     <body>
-        <h2 style="color:cornflowerblue">黄毅旋的《JavaScript Web前端开发》课程作业</h2>
-        <hr>
-        <a href="work1/index.html">work1&nbsp;开发环境变量</a><br>
-        <br>
-        <a href="work2/index.html">work2&nbsp;简单网页应用</a><br>
-        <br>
-        <a href="work2/index2.html">work2-1&nbsp;简单网页聊天</a><br>
-        <br>
-        <a href="work3/index.html">work3&nbsp;js基本语法</a><br>
-        <br>
-        <a href="work4/work4.html">work4&nbsp;js流程控制</a><br>
-        <br>
-        <a href="work5/index.html">work5&nbsp;js循环语句程序</a><br>
-        <br>
-        <a href="work6/index.html">work6&nbsp;阶乘法计算圆面积</a><br>
-        <br>
-        <a href="work7/index.html">work7&nbsp;冒泡排序和插入排序</a><br>
-        <br>
-        <a href="work7slide/index.html">work7-1&nbsp;冒泡排序和插入排序动画版</a><br>
-        <br>
-        <a href="work8/index.html">work8&nbsp;简易计算器</a><br>
-        <br>
-        <a href="work9/index.html">work9&nbsp;三级联动</a><br>
-        <br>
-        <a href="work10/index.html">work10&nbsp;猴子选大王</a><br>
-        <br>
-        <a href="work12/index.html">work12&nbsp;年历</a><br>
-        <br>
-        <a href="work12-1/index.html">work12-1&nbsp;万年历</a><br>
-        <br>
-        <a href="work13/index.html">work13&nbsp;表单生成器</a><br>
-        <br>
-        <a href="work14/index.html">work14&nbsp;限时秒杀</a><br>
-        <br>
-        <a href="work14/index1.html">work14-1&nbsp;红绿灯</a><br>
-        <br>
-        <a href="work15/index.html">work15&nbsp;购物车</a><br>
-        <br>
-
-    </body>
-        <p style="color:cornflowerblue">持续更新中······</p>
-        <hr>
+    <h2 style="color:cornflowerblue">黄毅旋的《JavaScript Web前端开发》课程作业</h2>
+        <ul id="nav">
+            <li>
+                <a href="#">JavaScript作业
+                    <ul id="nav2">
+                        <li><a href="work1/index.html">work1开发环境变量</a></li>
+                        <li><a href="work2/index.html">work2简单网页应用</a></li>
+                        <li><a href="work2/index2.html">work2-1简单网页聊天</a></li>
+                        <li><a href="work3/index.html">work3js基本语法</a></li>
+                        <li><a href="work4/work4.html">work4js流程控制</a></li>
+                        <li><a href="work5/index.html">work5js循环语句程序</a></li>
+                        <li><a href="work6/index.html">work6阶乘法计算圆面积</a></li>
+                        <li><a href="work7/index.html">work7冒泡排序和插入排序</a></li>
+                        <li><a href="work7slide/index.html">work7-1冒泡排序和插入排序动画版</a></li>
+                        <li><a href="work8/index.html">work8简易计算器</a></li>
+                        <li><a href="work9/index.html">work9三级联动</a></li>
+                        <li><a href="work10/index.html">work10猴子选大王</a></li>
+                        <li><a href="work12/index.html">work12年历</a></li>
+                        <li><a href="work12-1/index.html">work12-1万年历</a></li>
+                        <li><a href="work13/index.html">work13表单生成器</a></li>
+                        <li><a href="work14/index.html">work14限时秒杀</a></li>
+                        <li><a href="work14/index1.html">work14-1红绿灯</a></li>
+                        <li><a href="work15/index.html">work15购物车</a></li>
+                    </ul>
+                </a>
+            </li>
+        </ul>
     </body>
 </html>
