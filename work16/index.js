@@ -49,11 +49,6 @@ $('smallBox').onmousemove = function(event) {
     // 计算移动比例rate = 大图片能够移动的总距离/遮罩能够移动的总距离
     var rate = bigImgToMove / maskToMove;
     // 设置大图片当前的位置 = rate * 遮罩当前的位置
-<<<<<<< HEAD
     $('bigImg').style.left = -rate * maskX + 'px';
     $('bigImg').style.top = -rate * maskY + 'px';
-=======
-    $('bigImg').style.left = -rate * 'px';
-    $('bigImg').style.top = -rate * 'px';
->>>>>>> ec9ebea83d1ef825f95c153b163d4dfac24a8c63
 };
