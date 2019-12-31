@@ -305,3 +305,5 @@
     };
     window['Game2048'] = Game2048;
 })(window, document, jQuery);
+
+
