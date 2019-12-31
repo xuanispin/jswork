@@ -31,7 +31,7 @@
         //画地图
         drawMap: function () {
             var tds = [];
-            if (window.ActiveXObject && parseInt(navigator.userAgent.match(/msie ([\d.]+)/i)[1]) < 8) {
+            if (window.ActiveXObject && parseInt(navigator.userAgent.match(/msie([\d.]+)/i)[1])<8) {
                 var css = '#JMS_main table td{background-color:#888;}',
                     head = this.doc.getElementsByTagName("head")[0],
                     style = this.doc.createElement("style");
@@ -39,7 +39,7 @@
                 if (style.styleSheet) {
                     style.styleSheet.cssText = css;
                 } else {
-                    style.appendChild(this.doc.creatTextNode(css));
+                    style.appendChild(this.doc.createTextNode(css));
                 }
                 head.appendChild(style);
             }
@@ -128,7 +128,7 @@
             for (var i = 0; i < this.rowCount; i++) {
                 for (var j = 0; j < this.colCount; j++) {
                     (function (row, col) {
-                        self.$("m_" + i + "_" + j).onmousedown + function (e) {
+                        self.$("m_" + i + "_" + j).onmousedown = function (e) {
                             e = e || window.event;
                             var mouseNum = e.button;
                             var className = this.className;
@@ -274,7 +274,7 @@
                     var tbody = document.createElement("tbody");
                     table.appendChild(tbody);
                 }
-                table.replaceChild(tbody);
+                table.replaceChild(temp.firstChild.firstChild,table.tBodies[0]);
             } else {
                 table.innerHTML = html;
             }
