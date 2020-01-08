@@ -1,6 +1,6 @@
 document.getElementById('upload').onclick = function(){
     var form = document.getElementById('form');
-    var id = new FormData(form);
+    var fd = new FormData(form);
     var bar = document.getElementById('bar');   // 进度条
     var per = document.getElementById('per');   // 百分比值
     var down = document.getElementById('download'); // 下载地址
@@ -19,9 +19,11 @@ document.getElementById('upload').onclick = function(){
             if(name == ''){
                 throw new Error('服务器保存文件失败。');
             }
-            down.innerHTML = `文件上传成功。<a href=${name}>下载文件${name}</a>`;   // 使用模版字符串和变量替换${}
+            let reg=/^http(s)?:\/\/(.*?)\//         //提取服务器域名
+            let downurl =xhr.responseURL.match(reg)[0]+name.slice(2,name.length-1)
+            down.innerHTML = `文件上传成功。<a href=${downurl}>下载文件${name}</a>`;   // 使用模版字符串和变量替换${}
         }
     };
-    xhr.open('POST','/upload');
+    xhr.open('POST','http://139.9.81.203:8090/upload');
     xhr.send(fd);
 };
