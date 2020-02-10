@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>_D</title>
+    <script>
+        function myFunction(){
+            document.getElementById('assassin').innerHTML = 'Creed';
+        }
+    </script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <button type="button" onclick='document.getElementById("image1").src="images/1.png"'>点击恢复图片！</button>
+    <img id="image1" src="images/1.png">
+    <button type="button" onclick='document.getElementById("image1").src="images/2.png"'>点击改变图片！</button>
+    <p id="change1">一代又一代圣堂武士，选择了黑暗圣堂之路。</p>
+    <button type="button" onclick='document.getElementById("change1").innerHTML = "暗影疾行"'>点击改变内容！</button>
+    <button type="button" onclick='document.getElementById("change1").innerHTML = "一代又一代圣堂武士，选择了黑暗圣堂之路。"'>点击恢复内容！</button>
+    <p id="time1"></p>
+    <button type="button" onclick='document.getElementById("time1").innerHTML = Date()'>点击显示当前时间！</button><br><br>
+    <p id="textbig">暗影疾行！</p>
+    <button type="button" onclick="document.getElementById('textbig').style.fontSize = '50px'">点击放大字体！</button>
+    <button type="button" onclick="document.getElementById('textbig').style.fontSize = '16px'">点击恢复字体！</button>
+    <button type="button" onclick="document.getElementById('textbig').style.display = 'none'">点击隐藏文字！</button>
+    <button type="button" onclick="document.getElementById('textbig').style.display = 'block'">点击召唤文字！</button>
+    <p id="save"></p>
+    <p id="assassin">Assassin'S</p>
+    <button type="button" onclick="myFunction()">点击改变内容！</button>
+    <p id="road">Different road</p>
+
+    <script>
+        function myRoad(){
+            document.getElementById('road').innerHTML = 'Forward,boy,do not look back';
+        }
+    </script>
+
+    <button type="button" onclick="myRoad()">点击改变内容！</button>
+    <p id="hurt">My heart is hurt</p>
+    
+    <div class="box1">
+    <button type="button" onclick="heart()" class="trycss">点击改变内容！</button>
+    </div>
+
+    <script>
+        document.getElementById('save').innerHTML = "刺客信条";
+    </script>
+
+</body>
+<script src="index.js"></script>
+</html>
