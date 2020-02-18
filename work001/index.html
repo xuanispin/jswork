@@ -3,48 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <title>_D</title>
-    <script>
-        function myFunction(){
-            document.getElementById('assassin').innerHTML = 'Creed';
-        }
-    </script>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <button type="button" onclick='document.getElementById("image1").src="images/1.png"'>点击恢复图片！</button>
-    <img id="image1" src="images/1.png">
-    <button type="button" onclick='document.getElementById("image1").src="images/2.png"'>点击改变图片！</button>
+
+<div class="changeBox">
+    <img id="image1" src="images/1.png" width="1200px">
+    <button type="button" id="buttonCss1" onclick='changePicture1()'>点击恢复图片！</button>
+    <button type="button" id="buttonCss2" onclick='changePicture2()'>点击改变图片！</button>
+</div>
+
+
+
+<div class="changeText">
     <p id="change1">一代又一代圣堂武士，选择了黑暗圣堂之路。</p>
-    <button type="button" onclick='document.getElementById("change1").innerHTML = "暗影疾行"'>点击改变内容！</button>
-    <button type="button" onclick='document.getElementById("change1").innerHTML = "一代又一代圣堂武士，选择了黑暗圣堂之路。"'>点击恢复内容！</button>
+    <button type="button" id="buttonCss3" onclick='changeText1()'>点击改变内容！</button>
+    <button type="button" id="buttonCss4" onclick='changeText2()'>点击恢复内容！</button>
+</div>
+
+
+
+<div class="blockTime">
+    <button type="button" id="buttonCss5" onclick='blockTime1()'>点击显示当前时间！</button>
     <p id="time1"></p>
-    <button type="button" onclick='document.getElementById("time1").innerHTML = Date()'>点击显示当前时间！</button><br><br>
+</div>
+
+
+
+<div class="text1">
+    <button type="button" id="buttonCss6" onclick="cText1()">点击放大字体！</button>
+    <button type="button" id="buttonCss7" onclick="cText2()">点击恢复字体！</button>
+    <button type="button" id="buttonCss8" onclick="cText3()">点击隐藏文字！</button>
+    <button type="button" id="buttonCss9" onclick="cText4()">点击召唤文字！</button>
+    <br>
+    <br>
+    <br>
     <p id="textbig">暗影疾行！</p>
-    <button type="button" onclick="document.getElementById('textbig').style.fontSize = '50px'">点击放大字体！</button>
-    <button type="button" onclick="document.getElementById('textbig').style.fontSize = '16px'">点击恢复字体！</button>
-    <button type="button" onclick="document.getElementById('textbig').style.display = 'none'">点击隐藏文字！</button>
-    <button type="button" onclick="document.getElementById('textbig').style.display = 'block'">点击召唤文字！</button>
+</div>
+
+
+
+<div class="sText">
     <p id="save"></p>
+</div>
+
+
+
+<div class="boxText">
+    <button type="button" id="buttonCss10" onclick="myFunction()">点击改变内容！</button>
+    <button type="button" id="buttonCss11" onclick="myRoad()">点击改变内容！</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <p id="assassin">Assassin'S</p>
-    <button type="button" onclick="myFunction()">点击改变内容！</button>
-    <p id="road">Different road</p>
-
-    <script>
-        function myRoad(){
-            document.getElementById('road').innerHTML = 'Forward,boy,do not look back';
-        }
-    </script>
-
-    <button type="button" onclick="myRoad()">点击改变内容！</button>
+    <p id="road">Different roads</p>
     <p id="hurt">My heart is hurt</p>
+</div>
     
-    <div class="box1">
-    <button type="button" onclick="heart()" class="trycss">点击改变内容！</button>
-    </div>
+<div class="boxText2">
+    <button type="button" id="buttonCss12" onclick="heart()">点击改变内容！</button>
+</div>
 
-    <script>
-        document.getElementById('save').innerHTML = "刺客信条";
-    </script>
+
+
+<div class="changeBackColor">
+    <button type="button" id="buttonCss13" onclick="Color('lightyellow')">点击改变背景颜色！</button>
+</div>
+
+
 
 </body>
 <script src="index.js"></script>

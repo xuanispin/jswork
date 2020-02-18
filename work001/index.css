@@ -1,12 +1,184 @@
-.box1{
+body{
+    margin:0;
+    padding:0;
+}
+
+.changeBox{
+    margin:0 auto;
+    width:1200px;
+    height:700px;
+}
+
+#buttonCss1{
+    width:200px;
+    height:80px;
+    font-size:20px;
+    float:left;
+}
+
+#buttonCss2{
+    width:200px;
+    height:80px;
+    font-size:20px;
+    float:right;
+}
+
+                                        /*第一部分，改变图片。*/
+
+.changeText{
+    margin:0 auto;
+    width:1200px;
+    height:200px;
+}
+
+.changeText p{
+    margin:0;
+    padding:0;
+    font-size:30px;
+    text-align:center;
+}
+
+#buttonCss3{
+    width:200px;
+    height:80px;
+    font-size:20px;
+    float:left;
+}
+
+#buttonCss4{
+    width:200px;
+    height:80px;
+    font-size:20px;
+    float:right;
+}
+
+                                        /*第二部分，改变文字。*/
+
+.blockTime{
+    margin:0 auto;
+    width:1200px;
+    height:300px;
+}
+
+.blockTime p{
+    font-size:30px;
+    text-align:center;
+}
+
+#buttonCss5{
+    width:200px;
+    height:80px;
+    font-size:20px;
+}
+
+                                        /*第三部分，显示时间。*/
+
+.text1{
+    margin:0 auto;
+    width:1200px;
+    height:500px;
+}
+
+.text1 p{
+    font-size:30px;
+    text-align:center;
+}
+
+#buttonCss6{
+    width:200px;
+    height:80px;
+    font-size:20px;
+    float:left;
+}
+
+#buttonCss7{
+    width:200px;
+    height:80px;
+    font-size:20px;
+    float:left;
+}
+
+#buttonCss8{
+    width:200px;
+    height:80px;
+    font-size:20px;
+    float:right;
+}
+
+#buttonCss9{
+    width:200px;
+    height:80px;
+    font-size:20px;
+    float:right;
+}
+
+                                        /*第四部分，改变文字2。*/
+
+.sText{
+    margin:0 auto;
+    width:1200px;
+    height:100px;
+}
+
+.sText p{
+    font-size:30px;
+    text-align:center;
+}
+
+                                        /*第五部分，显示文字。*/
+
+.boxText{
+    margin:0 auto;
+    width:1200px;
+    height:500px;
+}
+
+.boxText p{
+    font-size:30px;
+    text-align:center;
+}
+
+#buttonCss10{
+    width:200px;
+    height:80px;
+    font-size:20px;
+    float:left;
+}
+
+#buttonCss11{
+    width:200px;
+    height:80px;
+    font-size:20px;
+    float:right;
+}
+
+.boxText2{
     margin:0 auto;
     width:700px;
     height:300px;
     text-align:center;
 }
 
-.trycss{
+#buttonCss12{
     width:200px;
-    height:100px;
+    height:80px;
     font-size:20px;
 }
+
+                                        /*第六部分，改变文字3。*/
+
+.changeBackColor{
+    margin:0 auto;
+    width:1200px;
+    height:500px;
+    text-align:center;
+}
+
+#buttonCss13{
+    width:200px;
+    height:80px;
+    font-size:20px;
+}
+
+                                        /*第七部分，改变背景颜色。*/
+
